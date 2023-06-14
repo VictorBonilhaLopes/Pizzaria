@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('table_pedidos', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->string('endereco');
+            $table->integer('valor');
             $table->timestamps();
         });
     }

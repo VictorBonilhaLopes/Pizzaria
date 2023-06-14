@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('table_itenspizza', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_pizza');
+            $table->string('ingredientes');
             $table->timestamps();
         });
     }

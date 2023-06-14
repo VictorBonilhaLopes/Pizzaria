@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('table_itenspedido', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_pedido');
+            $table->integer('id_pizza');
+            $table->string('obs');
             $table->timestamps();
         });
     }

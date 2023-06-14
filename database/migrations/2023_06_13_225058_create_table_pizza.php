@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('table_pizza', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->string('imagem');
+            $table->integer('valor');
             $table->timestamps();
         });
     }
