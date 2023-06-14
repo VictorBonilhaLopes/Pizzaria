@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>Guide</title>
+<title>La Famiglia</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content=""> 
@@ -50,7 +50,7 @@
               <a class="nav-link" href="/cliente/cardapio">Cardapio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Pedido</a>
+              <a class="nav-link" href="#">Pedido</a>
             </li>
             <li class="nav-item">
             @if (Route::has('login'))
@@ -81,10 +81,10 @@
               <a class="nav-link" href="/sobrenos">Sobre Nós</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Blog.html">Blog</a>
+              <a class="nav-link" href="/cliente/cardapio">Cardapio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="#">Pedido</a>
             </li>            
           </ul>
         </div>
@@ -102,8 +102,8 @@
               <ul>
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="/sobrenos">Sobre Nós</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/cliente/cardapio">Cardapio</a></li>
+                <li><a href="#">Pedido</a></li>
               </ul>
             </div>
           </div>
@@ -111,7 +111,7 @@
             <h1 class="footer_taital">Social Link</h1>
             <div class="social_icon">
               <ul>
-                <li><a href="#"><img src="{{url("cliente/images/instagram-icon.png")}}"></a></li>
+                <li><a href="https://www.instagram.com/pizzaria_o_casarao_/"><img src="{{url("cliente/images/instagram-icon.png")}}"></a></li>
               </ul>
             </div>
           </div>

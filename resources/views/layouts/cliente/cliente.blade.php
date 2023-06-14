@@ -31,36 +31,14 @@
                 <div class="col-md-6 padding_0">
                   <div class="bg_1">
                     <div class="padding_left0">
-                      <h1 class="best_text">Maria<br> 
-                      Best Guide<br> 
-                      For Transports</h1>
-                      <p class="many_text">There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                      <div class="read_bt"><a href="#">Read More</a></div>
+                      <h1 class="best_text">Nosso Lugar<br>  
+                      Perto do Obeid Plaza</h1>
+                      <p class="many_text">Lugar tradicionalissimo sendo essa a nova sede da La Famiglia aqui em Bauru.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 padding_0">
-                  <div class="image_1"><img src="cliente/images/img-1.png"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6 padding_0">
-                  <div class="bg_1">
-                    <div class="padding_left0">
-                      <h1 class="best_text">CLEITON<br> 
-                      Best Guide<br> 
-                      For Transports</h1>
-                      <p class="many_text">There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                      <div class="read_bt"><a href="#">Read More</a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 padding_0">
-                  <div class="image_1"><img src="cliente/images/img-1.png"></div>
+                  <div class="image_1"><img src="cliente/images/img-2carrousel.jpg"></div>
                 </div>
               </div>
             </div>
