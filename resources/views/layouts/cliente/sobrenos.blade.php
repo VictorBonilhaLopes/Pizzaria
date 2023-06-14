@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.maincliente')
 
 @section('content')
 
@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 padding_0">
-              <div class="image_2"><img src="images/img-2.png"></div>
+              <div class="image_2"><img src="cliente/images/img-2.png"></div>
             </div>
           <div class="col-md-6 padding_0">
             <div class="bg_2">

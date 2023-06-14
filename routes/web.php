@@ -21,12 +21,11 @@ Route::get('/sobrenos', function () {
     return view('layouts/cliente/sobrenos');
 });
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
+Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', function () {
-        return view('layouts/staff/staff');
-    })->name('layouts/staff/staff');
+        return view('layouts/staff/pizzas');
+    });
+    Route::get('/staff/pedidos', function () {
+        return view('layouts/staff/pedidos');
+    });
 });
