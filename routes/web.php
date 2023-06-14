@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts/cliente/cliente');
+});
+
+Route::get('/sobrenos', function () {
+    return view('layouts/cliente/sobrenos');
 });
 
 Route::middleware([
@@ -23,6 +27,6 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+        return view('layouts/staff/staff');
+    })->name('layouts/staff/staff');
 });
