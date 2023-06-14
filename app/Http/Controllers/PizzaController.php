@@ -26,13 +26,20 @@ class PizzaController extends Controller
         $pizzas->nome = $request->input('nome');
         $pizzas->valor = $request->input('valor');
         $pizzas->src = $request->input('src');
-
-        dd($pizzas);
-
         $pizzas->save();
 
-        $allPizzas = Pizza::all();
-        return view('layouts/staff/pizzas', ['pizzas' => $allPizzas]);
+        return redirect("/dashboard");
+    }
+
+    public function postAtualizaPizza(Request $request){
+        $id = $request->input("id");
+        $pizzas = Pizza::find($id);
+        $pizzas->nome = $request->input('nome');
+        $pizzas->valor = $request->input('valor');
+        $pizzas->src = $request->input('src');
+        $pizzas->save();
+
+        return redirect("/dashboard");
     }
 
     public function excluirPizza($id){

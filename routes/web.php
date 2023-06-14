@@ -33,6 +33,8 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::post('/staff/salvaNovaPizza', [PizzaController::class, 'postSalvaNovo']);
 
     Route::get('/staff/alteraPizza/{id}', [PizzaController::class, 'getPizza']);
+    Route::post('/staff/atualizaPizza', [PizzaController::class, 'postAtualizaPizza']);
+
     Route::get('/staff/excluirPizza/{id}', [PizzaController::class, 'excluirPizza']);
     
     Route::get('/staff/pedidos', function () {
