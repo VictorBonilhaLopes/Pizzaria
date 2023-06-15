@@ -41,7 +41,7 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/cliente/sobrenos">Nós</a>
+              <a class="nav-link" href="/cliente/sobrenos">Sobre Nós</a>
             </li>
             <li class="nav-item">
               <a class="logo_main" href="/"><img src="{{url("cliente/images/logo.png")}}"></a>
