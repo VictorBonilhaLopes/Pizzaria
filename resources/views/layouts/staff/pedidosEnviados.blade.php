@@ -4,7 +4,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title m-b-0">Pedidos não Enviados</h5>
+                <h5 class="card-title m-b-0">Pedidos Enviados</h5>
             </div>
             <table class="table">
                 <thead>
@@ -14,7 +14,6 @@
                         <th scope="col">Endereco</th>
                         <th scope="col">Pedido</th>
                         <th scope="col">Status</th>
-                        <th scope="col">&nbsp;</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,7 +30,6 @@
                                     Enviado
                                 @endif
                             </td>
-                            <td><a href="/staff/enviaPedido/{{ $pedido->id }}"><button type="button">Enviar</button></a></td>
                         </tr>
                     @endforeach
                 </tbody>

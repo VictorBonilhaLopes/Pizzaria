@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PizzaController;
+use App\Http\Controllers\PedidosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,11 @@ Route::get('/cliente/sobrenos', function () {
 
 Route::get('/cliente/cardapio', [PizzaController::class, 'getPizzasCardapio']);
 
+Route::get('/cliente/pedido', function () {
+    return view('layouts/cliente/pedido');
+});
+Route::post('/cliente/salvaNovoPedido', [PedidosController::class, 'postSalvaNovo']);
+
 Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', [PizzaController::class, 'getPizzas']);
 
@@ -33,11 +39,14 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::post('/staff/salvaNovaPizza', [PizzaController::class, 'postSalvaNovo']);
 
     Route::get('/staff/alteraPizza/{id}', [PizzaController::class, 'getPizza']);
+
     Route::post('/staff/atualizaPizza', [PizzaController::class, 'postAtualizaPizza']);
 
     Route::get('/staff/excluirPizza/{id}', [PizzaController::class, 'excluirPizza']);
     
-    Route::get('/staff/pedidos', function () {
-        return view('layouts/staff/pedidos');
-    });
+    Route::get('/staff/pedidos', [PedidosController::class, 'getPedidos']);
+
+    Route::get('/staff/pedidosEnviados', [PedidosController::class, 'getPedidosEnviados']);
+
+    Route::get('/staff/enviaPedido/{id}', [PedidosController::class, 'postAtualizaStatusPed']);
 });

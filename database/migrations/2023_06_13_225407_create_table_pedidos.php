@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->string('endereco');
-            $table->integer('valor');
+            $table->string('pedido');
+            $table->integer('status');
             $table->timestamps();
         });
     }

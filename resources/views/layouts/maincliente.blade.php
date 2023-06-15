@@ -50,7 +50,7 @@
               <a class="nav-link" href="/cliente/cardapio">Cardapio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pedido</a>
+              <a class="nav-link" href="/cliente/pedido">Pedido</a>
             </li>
             <li class="nav-item">
             @if (Route::has('login'))
@@ -84,7 +84,7 @@
               <a class="nav-link" href="/cliente/cardapio">Cardapio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pedido</a>
+              <a class="nav-link" href="/cliente/pedido">Pedido</a></a>
             </li>            
           </ul>
         </div>
@@ -103,7 +103,7 @@
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="/sobrenos">Sobre Nós</a></li>
                 <li><a href="/cliente/cardapio">Cardapio</a></li>
-                <li><a href="#">Pedido</a></li>
+                <li><a href="/cliente/pedido">Pedido</a></li>
               </ul>
             </div>
           </div>
